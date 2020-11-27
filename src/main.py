@@ -11,7 +11,7 @@ app = Flask(__name__,static_url_path="")
 
 @app.route('/', methods=['GET'])
 def convert_csv_to_json():
-    path = '../data/employees.csv'
+    path = 'data/employees.csv'
     with open (path, 'r') as file:
         reader = csv.reader(file)
         data_list = list()
